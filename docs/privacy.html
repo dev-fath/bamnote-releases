@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>밤노트 데이터 사용 안내</title>
+<meta name="description" content="밤노트가 읽는 것, 읽지 않는 것, 보관 기간, 밖으로 나가는 것">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f7f2e8; --sheet: #ffffff; --text: #2a2833; --muted: #6e6a78; --line: #ddd5c6; --accent: #c8873a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17161d; --sheet: #201f28; --text: #ece5d6; --muted: #a39e95; --line: #34323d; --accent: #e6b567; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.75 "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+  .back { font-size: 14px; text-decoration: none; }
+  h1 { font-size: 26px; margin: 12px 0 8px; }
+  h2 { font-size: 17px; margin: 28px 0 10px; }
+  .sheet { background: var(--sheet); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .sheet p { margin: 0 0 8px; }
+  .sheet p:last-child { margin: 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">‹ 밤노트</a>
+  <h1>데이터 사용 안내</h1>
+  <p>밤노트는 이 휴대폰 안에서 일기를 써요. 운영자가 볼 수 있는 정보는 없어요(맥 연결 시 암호문만 30일 중계). 앱 안 설정 → 정보 → 데이터 사용 안내와 같은 내용이에요.</p>
+
+  <h2>캘린더</h2>
+  <div class="sheet"><p>읽는 것: 일정 제목 · 시간 · 종일 여부. 읽지 않는 것: 참석자 · 메모 · 장소 상세. 거절한 일정은 빼요.</p></div>
+
+  <h2>걸음 · 운동 (Health Connect)</h2>
+  <div class="sheet"><p>읽는 것: 하루 걸음 수, 운동 종류 · 시간. 읽지 않는 것: 심박 · 수면 · 체중 등 다른 건강 기록. 일기 문장과 회고 막대에만 써요.</p></div>
+
+  <h2>사진</h2>
+  <div class="sheet"><p>읽는 것: 찍은 시각 · 장수 · 위치. 사진 내용은 보지 않아요. 메모에 직접 붙인 사진만 줄여서 저장해요.</p></div>
+
+  <h2>위치</h2>
+  <div class="sheet"><p>10분 남짓마다 대략의 위치를 휴대폰에 남겨 머문 장소를 묶고, 그날의 이동 선을 지도에 그려요. 원본 위치는 보관 기간(기본 30일)이 지나면 지워요(그 뒤엔 머문 곳만 남아요).</p></div>
+
+  <h2>슬랙 (맥 연결 시)</h2>
+  <div class="sheet"><p>맥의 Yoohoo 가 알림으로 보여 준 멘션의 보낸 사람 · 채널 · 시각만 받아요. 메시지 내용은 받지 않아요.</p></div>
+
+  <h2>밖으로 나가는 것</h2>
+  <div class="sheet">
+    <p>① 맥을 연결하면 Cloudflare 중계 서버에 암호문이 30일 머물러요. 맥과 이 휴대폰만 풀 수 있어서 운영자도 내용을 못 봐요. 서버는 접속 IP 와 시각을 볼 수 있어요.</p>
+    <p>② 구글 드라이브 백업을 켜면(준비 중) 내 구글 계정의 앱 전용 폴더에 일기와 줄인 사진이 올라가요.</p>
+    <p>③ 이동 기록 지도를 열면 그 지역의 지도 그림을 오픈스트리트맵 서버에서 받아요. 서버는 접속 IP 와 어느 지역 지도를 받았는지 알 수 있어요. 내 위치 기록 자체는 보내지 않아요.</p>
+    <p>④ 새 버전을 확인하고 받으려고 GitHub 에 접속해요.</p>
+  </div>
+
+  <h2>온디바이스 AI (Gemini Nano)</h2>
+  <div class="sheet">
+    <p>온디바이스 AI가 준비된 휴대폰에서 초안을 열 때만 그날의 기록 목록을 휴대폰 안의 Gemini Nano(Android AICore)에 넘겨요. 글은 휴대폰 안에서 만들어지고, 글을 만들려고 서버로 보내지 않아요. 설정에서 끌 수 있어요.</p>
+    <p>이 기능은 Google ML Kit 라이브러리를 쓰기 때문에 Google 의 ML Kit 약관이 적용돼요.</p>
+  </div>
+
+  <h2>종교 · 기도</h2>
+  <div class="sheet"><p>고른 종교와 기도 · 돌아보기 글은 휴대폰 안에서만 만들어요. 종교 설정은 밖으로 보내지 않아요.</p></div>
+
+  <h2>동 이름 · 지도 출처</h2>
+  <div class="sheet">
+    <p>머문 곳의 동 이름은 앱에 들어 있는 행정동 경계로 휴대폰 안에서 찾아요. 좌표를 밖으로 보내지 않아요.</p>
+    <p>행정동 경계: 통계청 통계지리정보서비스(SGIS, <a href="https://sgis.kostat.go.kr">sgis.kostat.go.kr</a>)에서 공공누리 제1유형으로 개방한 행정동 경계를 가공한 것이며(가공: vuski/admdongkor, <a href="https://github.com/vuski/admdongkor">github.com/vuski/admdongkor</a>), CC BY 4.0으로 배포됩니다. 앱에 넣으려고 경계를 단순화했어요.</p>
+    <p>지도: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자</p>
+  </div>
+
+  <h2>그 밖에</h2>
+  <div class="sheet"><p>광고 · 크래시 수집 도구를 쓰지 않아요. 진단 기록은 휴대폰에만 남고, 직접 공유할 때만 나가요.</p></div>
+
+  <p class="muted" style="margin-top:28px">혼자 쓰려고 만든 앱이에요. 문의는 <a href="https://github.com/dev-fath/bamnote-releases/issues">GitHub 이슈</a>로 남겨 주세요.</p>
+</div>
+</body>
+</html>

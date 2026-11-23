@@ -2,6 +2,7 @@
 
 하루 동안 남은 흔적으로 밤마다 일기 초안을 써 주는 안드로이드 앱의 설치 파일(APK)만 올리는 곳입니다.
 
+- 소개 · 설치 안내: https://dev-fath.github.io/bamnote-releases/
 - [Releases](../../releases/latest) 에서 최신 `bamnote-x.y.apk` 를 받아 설치하세요.
 - 안드로이드 11 이상. 처음 설치할 때 「출처를 알 수 없는 앱」 설치 허용이 필요합니다.
 - 앱은 설정 → 정보에서 새 버전을 알려 줍니다.
