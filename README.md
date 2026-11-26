@@ -1,6 +1,6 @@
 # 밤노트 (Bamnote) 설치 파일
 
-하루 동안 남은 흔적으로 밤마다 일기 초안을 써 주는 안드로이드 앱의 설치 파일(APK)만 올리는 곳입니다.
+하루 동안 남은 기록으로 밤마다 일기 초안을 써 주는 안드로이드 앱의 설치 파일(APK)만 올리는 곳입니다.
 
 - 소개 · 설치 안내: https://dev-fath.github.io/bamnote-releases/
 - [Releases](../../releases/latest) 에서 최신 `bamnote-x.y.apk` 를 받아 설치하세요.
